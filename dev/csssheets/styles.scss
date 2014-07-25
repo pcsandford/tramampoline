@@ -1,0 +1,52 @@
+@import "_normalize"; 
+
+/*Clearfix*/
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+/*Box sizing*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+//Vars
+
+$AccentRed: #FC354C;
+$TextBlack: #29221F;
+$DarkBlue: #13747D;
+$LightBlue: #0ABFBC;
+$Cream: #FCF7C5;
+
+body {
+	font-family: Roboto, Georgia, Arial, Helvetica, sans-serif;
+	color:$TextBlack;
+	width:100%;
+
+	.wrapper {
+		background-color: $LightBlue;
+		max-width:900px;
+		width:100%;
+		height:800px;
+		margin:0 auto;
+		padding: 20px;
+		border:1px solid red;
+	}
+
+	
+	
+
+}//body closing

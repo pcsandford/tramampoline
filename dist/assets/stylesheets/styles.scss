@@ -1,0 +1,75 @@
+@import "_normalize"; 
+
+/*Clearfix*/
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+
+/*Box sizing*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+//Vars
+
+$AccentRed: #FC354C;
+$TextBlack: #29221F;
+$DarkBlue: #13747D;
+$LightBlue: #0ABFBC;
+$Cream: #FCF7C5;
+
+body {
+	font-family: Roboto, Georgia, Arial, Helvetica, sans-serif;
+	color:$TextBlack;
+	
+
+.headerBackground {
+	background:url(../images/rocks.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	padding-top: 100px;
+	padding-bottom: 200px;
+	 // -webkit-filter: grayscale(1);
+  // filter: grayscale(1);
+
+	  header {
+		width:500px;
+		height:300px;
+		background: fade-out($DarkBlue,0.7);
+		margin: 0 auto;
+	
+		
+		h1 {
+			font-family:Roboto;
+			font-size: 30px;
+			color: white;
+			text-shadow: 1px 1px 1px $TextBlack;
+			text-align: center;
+			padding-top: 40px;
+		}
+		
+		h3 {
+			font-family:Verdana;
+			font-size:20px;
+			text-align: center;	
+		}
+	
+	}//header closing
+
+}//headerBackground closing
+
+}//body closing
